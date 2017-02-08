@@ -17,7 +17,7 @@ import org.springframework.stereotype.Component;
 import org.wicketstuff.annotation.scan.AnnotatedMountScanner;
 
 import de.agilecoders.wicket.core.Bootstrap;
-import r12.webpages.HomePage;
+import r12.configuration.webpages.HomePage;
 
 /**
  * The web application class also serves as spring boot starting point by using
