@@ -1,4 +1,4 @@
-package r12;
+package r12.configuration;
 
 
 import org.apache.logging.log4j.LogManager;
@@ -17,7 +17,7 @@ import org.springframework.stereotype.Component;
 import org.wicketstuff.annotation.scan.AnnotatedMountScanner;
 
 import de.agilecoders.wicket.core.Bootstrap;
-import es.salesianos.edu.webpages.HomePage;
+import r12.webpages.HomePage;
 
 /**
  * The web application class also serves as spring boot starting point by using

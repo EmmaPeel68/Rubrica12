@@ -1,4 +1,4 @@
-package r12;
+package r12.configuration;
 
 import javax.servlet.FilterRegistration;
 import javax.servlet.ServletContext;

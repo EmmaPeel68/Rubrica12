@@ -8,11 +8,11 @@
 		<version>1.5.1.RELEASE</version>
 	</parent>
 
-	<groupId>es.salesianos.edu</groupId>
-	<artifactId>rubrica</artifactId>
+	<groupId>r12</groupId>
+	<artifactId>r12</artifactId>
 	<packaging>jar</packaging>
 	<version>1.0.0-SNAPSHOT</version>
-	<name>rubrica</name>
+	<name>Rubrica12</name>
 
 
 	<repositories>
@@ -278,7 +278,7 @@
 		<junit.version>4.12</junit.version>
 
 		<!-- The main class to start by executing java -jar -->
-		<start-class>es.salesianos.edu.WicketWebApplication</start-class>
+		<start-class>r12.WicketWebApplication</start-class>
 	</properties>
 
 </project>

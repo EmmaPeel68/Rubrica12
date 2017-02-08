@@ -1,4 +1,4 @@
-package r12;
+package r12.configuration;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
