@@ -1,4 +1,4 @@
-package r12.configuration;
+package r12;
 
 
 import org.apache.logging.log4j.LogManager;
@@ -17,7 +17,7 @@ import org.springframework.stereotype.Component;
 import org.wicketstuff.annotation.scan.AnnotatedMountScanner;
 
 import de.agilecoders.wicket.core.Bootstrap;
-import r12.configuration.webpages.HomePage;
+import r12.webpages.HomePage;
 
 /**
  * The web application class also serves as spring boot starting point by using
@@ -46,9 +46,6 @@ public class WicketWebApplication extends WebApplication {
 		return HomePage.class;
     }
 
-    
-    
-    
     @Override
     protected void init() {
         super.init();

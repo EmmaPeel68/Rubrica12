@@ -1,6 +1,9 @@
 package r12.model;
 
+import java.io.Serializable;
+
 public class Books {
+
 	private int idBooks;
 	private String title;
 	private int isbn;

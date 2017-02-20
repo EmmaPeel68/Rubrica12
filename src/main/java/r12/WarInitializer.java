@@ -1,4 +1,4 @@
-package r12.configuration;
+package r12;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
@@ -11,7 +11,8 @@ import org.springframework.boot.web.support.SpringBootServletInitializer;
 public class WarInitializer extends SpringBootServletInitializer {
 
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-        return application.sources(WicketWebApplication.class);
+//        return application.sources(WicketWebApplication.class);
+    	return null;
     }
 
 }

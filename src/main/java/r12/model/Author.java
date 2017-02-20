@@ -7,6 +7,7 @@ public class Author implements Serializable {
 
 	private String nameAuthor;
 	private Date dateOfBirth;
+	private int idAuthor;
 
 	public Date getDateOfBirth() {
 		return dateOfBirth;
@@ -22,5 +23,13 @@ public class Author implements Serializable {
 	public void setNameAuthor(String nameAuthor) {
 		this.nameAuthor = nameAuthor;
 	}
+
+	public int getIdAuthor() {
+		return idAuthor;
+	}
+	public void setIdAuthor(int idAuthor) {
+		this.idAuthor = idAuthor;
+	}
+	
 
 }
