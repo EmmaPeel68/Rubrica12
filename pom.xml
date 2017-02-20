@@ -8,8 +8,8 @@
 		<version>1.5.1.RELEASE</version>
 	</parent>
 
-	<groupId>r12</groupId>
-	<artifactId>r12</artifactId>
+	<groupId>es.salesianos.edu</groupId>
+	<artifactId>Rubrica12</artifactId>
 	<packaging>jar</packaging>
 	<version>1.0.0-SNAPSHOT</version>
 	<name>Rubrica12</name>
@@ -193,6 +193,14 @@
 			<artifactId>jetty-server</artifactId>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/com.h2database/h2 -->
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<version>1.4.193</version>
+		</dependency>
+
+
 	</dependencies>
 
 
@@ -278,7 +286,7 @@
 		<junit.version>4.12</junit.version>
 
 		<!-- The main class to start by executing java -jar -->
-		<start-class>r12.configuration.WicketWebApplication</start-class>
+		<start-class>rubrica12.configuration.WicketWebApplication</start-class>
 	</properties>
 
 </project>
