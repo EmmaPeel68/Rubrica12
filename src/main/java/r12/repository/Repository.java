@@ -9,7 +9,7 @@ import r12.connection.ConnectionManager;
 
 public class Repository {
 
-	protected static final String jdbcUrl = "jdbc:h2:file:./src/main/resources/test";
+	protected static final String jdbcUrl = "jdbc:h2:file:./src/main/resources/scripts";
 	ConnectionManager manager = new ConnectionH2();
 
 	protected void close(PreparedStatement prepareStatement) {
