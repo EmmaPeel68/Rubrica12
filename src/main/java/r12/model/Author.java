@@ -5,23 +5,23 @@ import java.util.Date;
 
 public class Author implements Serializable {
 
-	private String name_Author;
-	private Date date_OfBirth;
+	private String nameAuthor;
+	private Date dateOfBirth;
 	private int idAuthor;
 
 	public Date getDateOfBirth() {
-		return date_OfBirth;
+		return dateOfBirth;
 	}
 	public void setDateOfBirth(Date dateOfBirth) {
-		this.date_OfBirth = dateOfBirth;
+		this.dateOfBirth = dateOfBirth;
 	}
 
 	public String getNameAuthor() {
-		return name_Author;
+		return nameAuthor;
 	}
 
 	public void setNameAuthor(String name_Author) {
-		this.name_Author = name_Author;
+		this.nameAuthor = name_Author;
 	}
 
 	public int getIdAuthor() {

@@ -9,13 +9,13 @@ import org.apache.wicket.model.CompoundPropertyModel;
 
 import r12.model.Books;
 
-public class Books_Page extends WebPage {
+public class BooksPage extends WebPage {
 	
-	public Books_Page() {
-		Form form = new Form("form_Insert_Books", new CompoundPropertyModel(new Books()));
-		form.add(new Label("title_Label", getString("title")));
-		form.add(new Label("isbn_Label", getString("isbn")));
-		form.add(new Label("idAuthor_Label", getString("idAuthor")));
+	public BooksPage() {
+		Form form = new Form("formInsertBooks", new CompoundPropertyModel(new Books()));
+		form.add(new Label("titleLabel", getString("title")));
+		form.add(new Label("isbnLabel", getString("isbn")));
+		form.add(new Label("idAuthorLabel", getString("idAuthor")));
 		form.add(new RequiredTextField("title"));
 		form.add(new RequiredTextField("isbn"));
 		form.add(new RequiredTextField("idAuthor"));

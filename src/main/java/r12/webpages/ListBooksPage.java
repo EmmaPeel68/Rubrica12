@@ -22,25 +22,25 @@ import r12.model.Books;
 import r12.service.ServiceBooks;
 
 @SuppressWarnings({ "unchecked", "rawtypes", "serial" })
-public class List_Books_Page extends WebPage {
+public class ListBooksPage extends WebPage {
 	private static final long serialVersionUID = -1935854748907274886L;
 
 	@SpringBean
 	ServiceBooks servBooks;
 
-	private static final Logger logger = LogManager.getLogger(List_Books_Page.class.getName());
+	private static final Logger logger = LogManager.getLogger(ListBooksPage.class.getName());
 
 	private String currentNameSearchBook = null;
 
 	private List listBook = Collections.emptyList();
 
-	public List_Books_Page(PageParameters parameters) {
+	public ListBooksPage(PageParameters parameters) {
 		currentNameSearchBook = parameters.get("currentSearchTerm").toString();
 		logger.debug("Cargando la pagina con el parametro " + currentNameSearchBook);
 		initComponents();
 	}
 
-	public List_Books_Page() {
+	public ListBooksPage() {
 		initComponents();
 	}
 
@@ -60,7 +60,7 @@ public class List_Books_Page extends WebPage {
 				pageParameters.add("currentSearchTerm", ((Books) getModelObject()).getTitle());
 				pageParameters.add("currentSearchTerm", ((Books) getModelObject()).getIsbn());
 				pageParameters.add("currentSearchTerm", ((Books) getModelObject()).getIdAuthor());
-				setResponsePage(List_Author_Page.class, pageParameters);
+				setResponsePage(ListAuthorPage.class, pageParameters);
 			}
 		};
 		form.add(new TextField("title"));
@@ -75,7 +75,7 @@ public class List_Books_Page extends WebPage {
 	}
 
 	private void addListBookView() {
-		Books books = new Books();// service.newEntity()
+		Books books = new Books();
 		books.setTitle(currentNameSearchBook);
 		listBook = servBooks.find_Books_ByidAuthor(books.getIdAuthor());
 		if (StringUtils.isNumeric(currentNameSearchBook)) {

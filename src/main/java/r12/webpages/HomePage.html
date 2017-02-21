@@ -4,13 +4,25 @@
 <head>
 </head>
 <body>		
-	   <div id="bd">
-	    	<h2>Página principal</h2>
-			<a wicket:id="Author_Page">Inserta un  Autor</a><br/>
-			<a wicket:id="List_Author_Page">Listado de los autores</a><br/>
-			<a wicket:id="Books_Page">Insertar un Libro</a><br/>
-			<a wicket:id="List_Books_Page">Listado de los libros</a><br/>
-	      
-	   </div>		
+	   <style>
+	   
+	td, th{text-align:center}
+	</style>
+
+	<div class="container">
+		
+		
+		<table border=3 width=30%>
+		
+			<tr><th colspan=2 >Autor</th></tr>
+			<tr><td><a wicket:id="AuthorPage">Inserta un autor</a></td>
+				<td><a wicket:id="ListAuthorPage">Lista de autores</a></td>
+			</tr>
+			<tr><th colspan=2>Libros</th></tr>
+			<tr><td><a wicket:id="BooksPage">Inserta un libro</a></td>
+			<td><a wicket:id="ListBooksPage">Lista de libros</a></td>
+			</tr>
+		</table>
+	</div>		
 	</body>
 </html>

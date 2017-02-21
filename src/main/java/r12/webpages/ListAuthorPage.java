@@ -23,25 +23,25 @@ import r12.model.Author;
 import r12.service.ServiceAuthor;
 
 @SuppressWarnings({ "unchecked", "rawtypes", "serial" })
-public class List_Author_Page extends WebPage {
+public class ListAuthorPage extends WebPage {
 	private static final long serialVersionUID = -1935854748907274886L;
 	
 	@SpringBean
 	ServiceAuthor servaut;
 	
-	private static final Logger logger = LogManager.getLogger(List_Author_Page.class.getName());
+	private static final Logger logger = LogManager.getLogger(ListAuthorPage.class.getName());
 	
 	private String currentNameSearch = null;
 	
 	private List listAuthor = Collections.emptyList();
 	
-	public List_Author_Page(PageParameters parameters) {
+	public ListAuthorPage(PageParameters parameters) {
 		currentNameSearch = parameters.get("currentSearchTerm").toString();
 		logger.debug("Cargando la pagina con el parametro " + currentNameSearch);
 		initComponents();
 	}
 	
-	public List_Author_Page() {
+	public ListAuthorPage() {
 		initComponents();
 	}
 
@@ -60,7 +60,7 @@ public class List_Author_Page extends WebPage {
 				PageParameters pageParameters = new PageParameters();
 				pageParameters.add("currentSearchTerm", ((Author) getModelObject()).getNameAuthor());
 				pageParameters.add("currentSearchTerm", ((Author) getModelObject()).getDateOfBirth());
-				setResponsePage(List_Author_Page.class, pageParameters);
+				setResponsePage(ListAuthorPage.class, pageParameters);
 			}
 		};
 		form.add(new TextField("nameAuthor"));
